@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 46414149}
   - component: {fileID: 46414148}
   - component: {fileID: 46414151}
+  - component: {fileID: 46414152}
   - component: {fileID: 46414150}
   m_Layer: 0
   m_Name: brown_window_0
@@ -256,9 +257,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e885675228818f498eb69d05b412ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioAlarm: {fileID: 313155065}
+  _audioSource: {fileID: 313155065}
   _targetVolume: 1
   _volumeChangeSpeed: 1
+--- !u!114 &46414152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46414147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79cfc881c94a3c34e8f3cb88c61fa937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToDetect: {fileID: 785336282}
 --- !u!1 &262333390
 GameObject:
   m_ObjectHideFlags: 0

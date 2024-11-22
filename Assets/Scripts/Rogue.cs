@@ -10,6 +10,7 @@ public class Rogue : MonoBehaviour
     [SerializeField] private int _hiddenOrderInLayer = -1;
     [SerializeField] private Vector2 _targetPosition;
 
+    private float _movingAccuracy = 0.1f;
     private Vector2 _basePosition;
     private SpriteRenderer _spriteRenderer;
 
@@ -37,7 +38,7 @@ public class Rogue : MonoBehaviour
     private void Move()
     {
         var distance = Vector2.Distance(_targetPosition, transform.position);
-        var isPointReached = distance <= 0.1;
+        var isPointReached = distance <= _movingAccuracy;
         var step = _speed * Time.deltaTime;
 
         if (isPointReached)
